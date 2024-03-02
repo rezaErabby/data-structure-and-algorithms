@@ -52,3 +52,21 @@
 // }
 
 // Find GCD of two numbers
+
+const number1 = 11;
+const number2 = 13;
+let gcdNumber;
+
+// 4 and 8 -> so i need to find out the greatest number that divides both number1 and number2
+
+for(let i = 1 ; i <= Math.min(4,8); i++){
+    if(number1 % i === 0 && number2 % i === 0){
+        gcdNumber = i;
+    }
+}
+
+console.log("gcdNumber",gcdNumber)
+
+
+
+
