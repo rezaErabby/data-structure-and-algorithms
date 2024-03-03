@@ -53,20 +53,40 @@
 
 // Find GCD of two numbers
 
-const number1 = 11;
-const number2 = 13;
-let gcdNumber;
+// const number1 = 11;
+// const number2 = 13;
+// let gcdNumber;
 
-// 4 and 8 -> so i need to find out the greatest number that divides both number1 and number2
+// // 4 and 8 -> so i need to find out the greatest number that divides both number1 and number2
 
-for(let i = 1 ; i <= Math.min(4,8); i++){
-    if(number1 % i === 0 && number2 % i === 0){
-        gcdNumber = i;
-    }
+// for(let i = 1 ; i <= Math.min(4,8); i++){
+//     if(number1 % i === 0 && number2 % i === 0){
+//         gcdNumber = i;
+//     }
+// }
+
+// console.log("gcdNumber",gcdNumber)
+
+// Check if a number is Armstrong Number or not
+
+const number = 153;
+
+const splitedNumber = Math.abs(number).toString().split('');
+
+console.log(splitedNumber)
+let isArmStrongNumber = 0;
+splitedNumber.forEach(number => {
+    isArmStrongNumber += Math.pow(number,splitedNumber.length);
+})
+
+if(number === isArmStrongNumber){
+    console.log("yes it is an armstrong number")
+} else {
+    console.log("no, it is not an armstrong number")
 }
+// another solution
 
-console.log("gcdNumber",gcdNumber)
+const length = splitedNumber.length;
 
-
-
-
+const isarm = splitedNumber.reduce((acc,digit) => acc + Math.pow(digit,length),0)
+console.log(isarm)
