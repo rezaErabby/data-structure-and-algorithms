@@ -69,24 +69,48 @@
 
 // Check if a number is Armstrong Number or not
 
-const number = 153;
+// const number = 153;
 
-const splitedNumber = Math.abs(number).toString().split('');
+// const splitedNumber = Math.abs(number).toString().split('');
 
-console.log(splitedNumber)
-let isArmStrongNumber = 0;
-splitedNumber.forEach(number => {
-    isArmStrongNumber += Math.pow(number,splitedNumber.length);
-})
+// console.log(splitedNumber)
+// let isArmStrongNumber = 0;
+// splitedNumber.forEach(number => {
+//     isArmStrongNumber += Math.pow(number,splitedNumber.length);
+// })
 
-if(number === isArmStrongNumber){
-    console.log("yes it is an armstrong number")
-} else {
-    console.log("no, it is not an armstrong number")
-}
-// another solution
+// if(number === isArmStrongNumber){
+//     console.log("yes it is an armstrong number")
+// } else {
+//     console.log("no, it is not an armstrong number")
+// }
+// // another solution
 
-const length = splitedNumber.length;
+// const length = splitedNumber.length;
 
-const isarm = splitedNumber.reduce((acc,digit) => acc + Math.pow(digit,length),0)
-console.log(isarm)
+// const isarm = splitedNumber.reduce((acc,digit) => acc + Math.pow(digit,length),0)
+// console.log(isarm)
+
+// Print all Divisors of a given Number
+
+// const number = 97;
+// let divisors = []
+// for(let i = 1; i <= number; i++){
+//     if(number % i === 0){
+//         divisors.push(i);
+//     }
+// }
+
+// console.log("divisors -> ",divisors);
+
+// Check if a number is prime or not
+// const number = 11;
+// let isPrimeNumber = true;
+// for(let i =2 ; i < number; i++){
+//    if(number % i === 0){
+   
+//     isPrimeNumber = false
+//    } 
+// }
+
+// console.log(isPrimeNumber === true ? 'It is a prime numner' : 'It is not a prime number')
